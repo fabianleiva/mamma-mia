@@ -302,6 +302,10 @@ p {
   margin-bottom: 1rem;
 }
 
+.div:where(.swal2-container), button:where(.swal2-styled).swal2-confirm {
+  background-color: #14A44D !important;
+}
+
 @media screen and (max-width: 1024px) {
   .webName {
     font-size: 1.2rem;
