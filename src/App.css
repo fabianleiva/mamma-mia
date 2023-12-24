@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap");
+
+* {
+  font-family: Mulish, sans-serif;
+  color: #262523;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  width: 95%;
+  border-radius: 100px 100px 100px 100px;
+  height: 5rem;
+  margin: 1rem;
+}
+
+.navigationBar {
+  display: flex;
+  height: auto;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nameSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  margin-left: 1rem;
+  color: #fafafa;
+  width: 22rem;
+}
+
+.nameSection:hover {
+  animation: shake 0.3s;
+  cursor: pointer;
+}
+
+.linkSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25%,
+  75% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+}
+
+.animate__animated.animate__fadeIn {
+  animation-delay: 0.1s;
+  --animate-duration: 1s;
+}
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 1s;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e2e2;
+  border-radius: 100px 100px 100px 100px;
+  height: 2rem;
+  width: 95%;
+  margin: 1rem;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px #333;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+h4 {
+  margin-bottom: 2rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.65rem;
+}
+
+.active {
+  color: #fbd771;
+}
+
+.inactive {
+  color: white;
+}
+
+.headerImage {
+  width: 95%;
+  height: 25rem;
+  border-radius: 50px;
+  overflow: hidden;
+  background: url("./assets/img/pizzas_bg.webp");
+  background-size: cover;
+  opacity: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fafafa;
+}
+
+.homeContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galleryContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.cardContainer {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 20rem !important;
+  justify-content: space-around;
+  padding: 1rem;
+  align-items: center;
+  margin: 2rem;
+  border-radius: 25px;
+}
+
+.card-img-top {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.list-group-item {
+  font-size: 0.8rem;
+}
+
+.cardLinkButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  margin: 0.5rem;
+}
+
+.detailContainer {
+  width: 95%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.detailCard {
+  display: flex;
+  flex-direction: row;
+  width: 100% !important;
+  margin: 0;
+  padding: 0 !important;
+  border: none;
+}
+
+.card-title {
+  display: flex;
+  justify-content: start;
+  font-size: 1.5rem;
+}
+
+.selectedCardText {
+  text-align: start;
+}
+
+.selectedCardImageContainer {
+  width: 40%;
+  max-width: 40rem;
+  min-height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.selectedCardImage {
+  height: 100%;
+  width: auto;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+.selectedCardBodyContainer {
+  width: 60%;
+}
+
+.ingredients {
+  text-align: start;
+  border: none;
+}
+
+.priceAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  margin: 8px !important;
+  font-size: 1.4rem;
+}
+
+.pizzaCartImage {
+  max-width: 6rem;
+  border-radius: 5px;
+  margin: 0.2rem;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cartSection1 {
+  display: flex;
+  align-items: center;
+}
+.cartSection2 {
+  display: flex;
+  align-items: center;
+}
+
+.cartContainer {
+  width: 95%;
+}
+
+p {
+  margin: 0;
+}
+
+.pizzaNameCart {
+  margin: 1rem;
+}
+
+.totalCartValue {
+  margin-top: 1rem;
+}
+
+.cartTitle {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .webName {
+    font-size: 1.2rem;
+  }
+  .nameSection {
+    width: 18rem;
+  }
+  .linkSection {
+    font-size: 1rem;
+  }
+  .detailCard {
+    flex-direction: column;
+  }
+  .selectedCardImageContainer {
+    width: 60%;
+  }
+}
